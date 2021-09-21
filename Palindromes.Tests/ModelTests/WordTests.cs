@@ -6,6 +6,12 @@ namespace Palindromes.Tests
   [TestClass]
   public class WordTests
   {
-    // Test methods go here
+  [TestMethod]
+  // public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
+    public void IsPalindrome_IsSameReversed_True()
+    {
+    Word testWord = new Word();
+    Assert.AreEqual(true, testWord.IsPalindrome("racecar"));
+    }
   }
 }
