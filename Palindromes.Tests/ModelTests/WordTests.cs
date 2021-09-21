@@ -13,6 +13,12 @@ namespace Palindromes.Tests
     Word testWord = new Word();
     Assert.AreEqual(true, testWord.IsPalindrome("butter"));
   }
+  [TestMethod]
+  public void IsPalindrome_IsString_True()
+  {
+    Word testWord = new Word();
+    Assert.AreEqual(true, testWord.IsPalindrome("butter"));
+  }
 
   [TestMethod]
   // public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
