@@ -27,5 +27,13 @@ namespace Palindromes.Tests
     Word testWord = new Word();
     Assert.AreEqual(true, testWord.IsPalindrome("racecar"));
     }
+
+  [TestMethod]
+  public void IsPalindrome2_ArrayIsReversed_True()
+  {
+    Word testWord = new Word();
+    Assert.AreEqual(true, testWord.IsPalindrome2("butter"));
+  }
+
   }
 }
